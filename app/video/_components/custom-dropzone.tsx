@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import ReactDropzone from "react-dropzone";
 import { toast } from "sonner";
+import { Projector } from './projector';
 
 type CustomDropZoneProps ={
 
@@ -63,7 +64,7 @@ const CustomDropZone = ({handleUpload,acceptedFiles,disabled}:CustomDropZoneProp
           }`}
         >
           <input {...getInputProps()} />
-          {/* <Projector /> */}
+          <Projector />
           <h3 className="text-center mt-5">
             Click to select video <br />
             or
